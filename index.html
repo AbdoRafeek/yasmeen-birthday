@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09060d">
+  <meta name="description" content="A little birthday surprise made with love for Yasmeen.">
+  <title>For Yasmeen ♡ | Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="#home">For Yasmeen <span>♡</span></a>
+    <div class="top-actions">
+      <button class="icon-btn" id="langToggle" aria-label="Switch language">عربي</button>
+      <button class="icon-btn" id="soundToggle" aria-label="Toggle ambient sound" title="Ambient sound">♫</button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+  <nav class="nav-menu" id="navMenu">
+    <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="#memories" data-en="Memories" data-ar="ذكريات">Memories</a>
+    <a href="#letter" data-en="A little letter" data-ar="رسالة صغيرة">A little letter</a>
+    <a href="#wish" data-en="Make a wish" data-ar="تمنّي أمنية">Make a wish</a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-en="A little something just for you" data-ar="حاجة صغيرة مخصوص عشانك">A little something just for you</p>
+        <h1><span data-en="Happy Birthday" data-ar="عيد ميلاد سعيد">Happy Birthday</span><br><em>Yasmeen</em><span class="heart">♡</span></h1>
+        <p class="arabic-sub" data-en="كل سنة وإنتي طيبة" data-ar="كل سنة وإنتي طيبة">كل سنة وإنتي طيبة</p>
+        <p class="hero-copy" data-en="On your special day, I just wanted to remind you how amazing, kind, and wonderfully unique you are. You deserve a year full of little joys and big dreams coming true." data-ar="في يومك المميز، حبيت أفكرك إنك شخص جميل ولطيف ومميز بطريقتك. أتمنى تكون سنتك الجديدة مليانة فرحة ونجاح وأحلام بتتحقق.">On your special day, I just wanted to remind you how amazing, kind, and wonderfully unique you are. You deserve a year full of little joys and big dreams coming true.</p>
+        <button class="primary-btn" id="openSurprise"><span data-en="Open your surprise" data-ar="افتحي مفاجأتك">Open your surprise</span> <span>♡</span></button>
+        <div class="scroll-hint"><span class="mouse"></span><span data-en="Scroll to explore" data-ar="انزلي واكتشفي">Scroll to explore</span></div>
+      </div>
+      <div class="hero-decor decor-flower">✿</div><div class="hero-decor decor-star">✦</div>
+      <div class="hero-bottom-glow"></div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-en="Little moments, lovely memories" data-ar="لحظات صغيرة وذكريات جميلة">Little moments, lovely memories</p>
+        <h2 data-en="A Gallery of <em>Good Vibes</em>" data-ar="معرض من <em>اللحظات الحلوة</em>">A Gallery of <em>Good Vibes</em></h2>
+        <p data-en="A few snapshots to make this day feel a little more special." data-ar="شوية صور ولقطات تخلي اليوم ده مميز أكتر.">A few snapshots to make this day feel a little more special.</p>
+      </div>
+
+      <div class="memory-grid">
+        <button class="memory-card reveal card-tall" data-photo="0" aria-label="Open memory 1">
+          <img src="images/yasmeen-photo-1.jpeg" alt="A favorite moment">
+          <span class="photo-label" data-en="Little joys ♡" data-ar="لحظات جميلة ♡">Little joys ♡</span>
+        </button>
+        <button class="memory-card reveal" data-photo="1" aria-label="Open memory 2">
+          <img src="images/yasmeen-photo-2.jpeg" alt="A happy memory">
+          <span class="photo-label" data-en="Good times" data-ar="أوقات حلوة">Good times</span>
+        </button>
+        <button class="memory-card reveal" data-photo="2" aria-label="Open memory 3">
+          <img src="images/yasmeen-photo-3.jpeg" alt="A lovely day">
+          <span class="photo-label" data-en="A little magic ✨" data-ar="شوية سحر ✨">A little magic ✨</span>
+        </button>
+        <button class="memory-card reveal card-wide" data-photo="3" aria-label="Open memory 4">
+          <img src="images/yasmeen-photo-4.jpeg" alt="A smile to remember">
+          <span class="photo-label" data-en="Smile, Yasmeen!" data-ar="ابتسمي يا ياسمين!">Smile, Yasmeen!</span>
+        </button>
+        <button class="memory-card reveal" data-photo="4" aria-label="Open memory 5">
+          <img src="images/yasmeen-photo-5.jpeg" alt="A sweet memory">
+          <span class="photo-label" data-en="Sweet memories" data-ar="ذكريات حلوة">Sweet memories</span>
+        </button>
+        <button class="memory-card reveal" data-photo="5" aria-label="Open memory 6">
+          <img src="images/yasmeen-photo-6.jpeg" alt="Just for you">
+          <span class="photo-label" data-en="Just because ♡" data-ar="عشانك وبس ♡">Just because ♡</span>
+        </button>
+        <button class="memory-card reveal" data-photo="6" aria-label="Open memory 7">
+          <img src="images/yasmeen-photo-7.jpeg" alt="Keep shining">
+          <span class="photo-label" data-en="Keep shining" data-ar="دايمًا منورة">Keep shining</span>
+        </button>
+        <button class="memory-card reveal" data-photo="7" aria-label="Open memory 8">
+          <img src="images/yasmeen-photo-8.jpeg" alt="A reason to smile">
+          <span class="photo-label" data-en="Always a reason to smile" data-ar="دايمًا في سبب للابتسامة">Always a reason to smile</span>
+        </button>
+      </div>
+      <p class="gallery-note" data-en="Eight moments, saved just for this little celebration ♡" data-ar="ثماني صور وذكريات مخصوص للاحتفال الجميل ده ♡">Eight moments, saved just for this little celebration ♡</p>
+</section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-layout">
+        <div class="letter-intro reveal">
+          <p class="eyebrow" data-en="A note from me to you" data-ar="كلمتين منّي ليكي">A note from me to you</p>
+          <h2 data-en="A little letter,<br><em>a lot of warmth.</em>" data-ar="رسالة صغيرة،<br><em>ومحبة كبيرة.</em>">A little letter,<br><em>a lot of warmth.</em></h2>
+          <p data-en="Some wishes are better when they’re written down. Tap the envelope and read yours." data-ar="في أمنيات أحلى لما تتكتب. دوسي على الظرف وافتحي رسالتك.">Some wishes are better when they’re written down. Tap the envelope and read yours.</p>
+        </div>
+        <button class="envelope-wrap reveal" id="envelope" aria-label="Open your birthday letter">
+          <div class="envelope-shadow"></div>
+          <div class="letter-paper">
+            <span class="letter-small" data-en="For Yasmeen" data-ar="إلى ياسمين">For Yasmeen</span>
+            <span class="letter-big">♡</span>
+            <span class="letter-tap" data-en="Tap to open" data-ar="دوسي عشان تفتحي">Tap to open</span>
+          </div>
+          <div class="envelope-back"></div><div class="envelope-flap"></div>
+          <div class="envelope-front"></div><div class="envelope-seal">♡</div>
+        </button>
+      </div>
+    </section>
+
+    <section class="section wish-section" id="wish">
+      <div class="wish-stars">✦　·　✧　·　✦</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-en="One birthday tradition..." data-ar="عادة في كل عيد ميلاد...">One birthday tradition...</p>
+        <h2 data-en="Make a <em>Wish</em>" data-ar="اتمني <em>أمنية</em>">Make a <em>Wish</em></h2>
+        <p data-en="Take a breath, think of something beautiful, then blow out the candles." data-ar="خدي نفس، فكري في حاجة جميلة، وبعدين اطفي الشموع.">Take a breath, think of something beautiful, then blow out the candles.</p>
+      </div>
+      <div class="cake-scene reveal">
+        <div class="cake-glow"></div>
+        <div class="candles" id="candles">
+          <button class="candle" aria-label="Blow out candle 1"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></button>
+          <button class="candle" aria-label="Blow out candle 2"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></button>
+          <button class="candle" aria-label="Blow out candle 3"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></button>
+          <button class="candle" aria-label="Blow out candle 4"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></button>
+          <button class="candle" aria-label="Blow out candle 5"><span class="flame"></span><span class="wick"></span><span class="candle-body"></span></button>
+        </div>
+        <div class="cake">
+          <div class="cake-top"><span class="icing-drip drip-one"></span><span class="icing-drip drip-two"></span><span class="icing-drip drip-three"></span></div>
+          <div class="cake-body"><span class="cake-heart">♡</span><span class="cake-name">Yasmeen</span></div>
+          <div class="cake-base"></div>
+        </div>
+        <button class="primary-btn blow-btn" id="blowCandles"><span data-en="Blow out the candles" data-ar="اطفي الشموع">Blow out the candles</span> ✨</button>
+        <p class="wish-result" id="wishResult" aria-live="polite" data-en="Your wish is between you and the universe ♡" data-ar="أمنيتك سر بينك وبين الكون ♡">Your wish is between you and the universe ♡</p>
+      </div>
+    </section>
+
+    <section class="finale section" id="finale">
+      <div class="finale-content reveal">
+        <span class="finale-heart">♡</span>
+        <p class="eyebrow" data-en="And one last thing..." data-ar="وآخر حاجة...">And one last thing...</p>
+        <h2 data-en="Keep being <em>you.</em>" data-ar="خليكي دايمًا <em>إنتي.</em>">Keep being <em>you.</em></h2>
+        <p data-en="May your new year bring you kind people, peaceful days, exciting beginnings, and so many reasons to smile. Happy Birthday, Yasmeen!" data-ar="يارب سنتك الجديدة تكون مليانة بناس طيبين، وأيام هادية، وبدايات جميلة، وأسباب كتير تخليكي تبتسمي. كل سنة وإنتي طيبة يا ياسمين!">May your new year bring you kind people, peaceful days, exciting beginnings, and so many reasons to smile. Happy Birthday, Yasmeen!</p>
+        <button class="outline-btn" id="moreHearts" data-en="Send you a little more love ♡" data-ar="شوية حب زيادة ليكي ♡">Send you a little more love ♡</button>
+      </div>
+      <footer>Made with <span>♥</span> just for Yasmeen · <span data-en="A little birthday magic" data-ar="شوية سحر لعيد الميلاد">A little birthday magic</span></footer>
+    </section>
+  </main>
+
+  <div class="modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close="true"></div>
+    <article class="modal-card letter-modal-card">
+      <button class="modal-close" data-close="true" aria-label="Close">×</button>
+      <p class="eyebrow" data-en="A birthday note" data-ar="رسالة عيد ميلاد">A birthday note</p>
+      <h2 id="modalTitle">Dear Yasmeen, <span>♡</span></h2>
+      <div class="modal-copy" id="modalCopy">
+        <p>كل سنة وإنتي طيبة يا ياسمين ❤️</p>
+        <p>أتمنى السنة الجديدة من عمرك تكون ألطف وأجمل، وتكون مليانة نجاح وضحك وراحة بال، وتوصلي فيها لكل حاجة نفسك فيها.</p>
+        <p>خليكي دايمًا بنفس روحك الحلوة، وافتكري إنك تستاهلي كل حاجة جميلة. أتمنى يومك يكون شبه قلبك: جميل ومليان نور.</p>
+        <p>Happy Birthday! Wishing you happiness today and always. ♡</p>
+      </div>
+      <p class="signature" data-en="From a friend who appreciates you ♡" data-ar="من صديقة بتتمنالك كل خير ♡">From a friend who appreciates you ♡</p>
+    </article>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <button class="lightbox-arrow prev" id="photoPrev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="Selected memory">
+    <button class="lightbox-arrow next" id="photoNext" aria-label="Next photo">›</button>
+    <p id="lightboxCaption"></p>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <audio id="birthdayMusic" loop preload="auto">
+    <source src="music/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
